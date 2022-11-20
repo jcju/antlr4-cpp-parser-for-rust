@@ -32,3 +32,14 @@ https://github.com/antlr/grammars-v4/tree/master/rust
 ### Guide on building a VS C++ parser with ANTLR
 
 to be finished.
+
+
+
+### Test
+
+| Status | Test file     | Notes                                                                       |
+| :-: | --------------- | --------------------------------------------------------------------------- |
+| ✅  | hello.rs             |                                                                             |
+| ✅  | v1_46_0_split_float_literal.rs |                                                                             |
+| - | place_holder  | not tested yet |
+| ❌  | place_holder            | test: FAIL                                                                  |
