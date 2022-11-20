@@ -4,11 +4,11 @@
 
 Added C++ implementation of two base Class:
 
-- RustLexerBase.cpp
-- RustParserBase.cpp
+- CppBase/RustLexerBase.h
+- CppBase/RustParserBase.h
 
 
-### Usage: 
+### Usage
 
 Generate parser (can be skipped)
 ```
@@ -22,7 +22,7 @@ Put Rust code in:
 build and run.
 
 
-### Ref: 
+### Reference
 
 https://github.com/antlr/grammars-v4/tree/master/rust
 
