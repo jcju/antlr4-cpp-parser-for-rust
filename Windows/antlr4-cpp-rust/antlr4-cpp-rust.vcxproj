@@ -346,13 +346,14 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\CppBase\RustLexerBase.h" />
+    <ClInclude Include="..\..\CppBase\RustParserBase.h" />
     <ClInclude Include="..\..\generated\RustLexer.h" />
     <ClInclude Include="..\..\generated\RustParser.h" />
     <ClInclude Include="..\..\generated\RustParserBaseListener.h" />
     <ClInclude Include="..\..\generated\RustParserBaseVisitor.h" />
     <ClInclude Include="..\..\generated\RustParserListener.h" />
     <ClInclude Include="..\..\generated\RustParserVisitor.h" />
-    <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\runtime\antlr4cpp-vs2022.vcxproj">

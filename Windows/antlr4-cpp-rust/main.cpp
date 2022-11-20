@@ -6,7 +6,7 @@
 //  main.cpp
 //  antlr4-cpp-rust
 //
-//  Dev: jcju
+//  dev: jcju
 //
 
 #include <iostream>
@@ -26,7 +26,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 	string line;
-	ifstream codeFile("inputCode.rs");
+	ifstream codeFile("../../examples/inputCode.rs");
 	if (codeFile.is_open()) {
 		ANTLRInputStream input(codeFile);
 		RustLexer lexer(&input);
