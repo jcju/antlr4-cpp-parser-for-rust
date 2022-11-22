@@ -5,8 +5,6 @@
 *.zip
 *.gz
 
-.vscode/
-*/.vscode/
 
 ## Ignore Visual Studio temporary files  ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
