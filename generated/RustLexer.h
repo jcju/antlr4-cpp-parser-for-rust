@@ -3,10 +3,12 @@
 
 #pragma once
 
+
 #include "antlr4-runtime.h"
-#include "../CppBase/RustLexerBase.h"
+
 
 namespace antlrcpptest {
+
 
 class  RustLexer : public RustLexerBase {
 public:

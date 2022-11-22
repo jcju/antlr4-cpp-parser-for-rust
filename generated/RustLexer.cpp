@@ -11,47 +11,7 @@ using namespace antlrcpptest;
 
 
 using namespace antlr4;
-/*
-bool RustLexerBase::floatLiteralPossible() {
-    if (this->lt1 == nullptr || this->lt2 == nullptr)
-        return true;
-    if (this->lt1->getType() != antlrcpptest::newdict.DOT)
-        return true;
-    switch (this->lt2->getType()) {
-    case RustLexer.CHAR_LITERAL:
-    case RustLexer.STRING_LITERAL:
-    case RustLexer.RAW_STRING_LITERAL:
-    case RustLexer.BYTE_LITERAL:
-    case RustLexer.BYTE_STRING_LITERAL:
-    case RustLexer.RAW_BYTE_STRING_LITERAL:
-    case RustLexer.INTEGER_LITERAL:
-    case RustLexer.DEC_LITERAL:
-    case RustLexer.HEX_LITERAL:
-    case RustLexer.OCT_LITERAL:
-    case RustLexer.BIN_LITERAL:
 
-    case RustLexer.KW_SUPER:
-    case RustLexer.KW_SELFVALUE:
-    case RustLexer.KW_SELFTYPE:
-    case RustLexer.KW_CRATE:
-    case RustLexer.KW_DOLLARCRATE:
-
-    case RustLexer.GT:
-    case RustLexer.RCURLYBRACE:
-    case RustLexer.RSQUAREBRACKET:
-    case RustLexer.RPAREN:
-
-    case RustLexer.KW_AWAIT:
-
-    case RustLexer.NON_KEYWORD_IDENTIFIER:
-    case RustLexer.RAW_IDENTIFIER:
-    case RustLexer.KW_MACRORULES:
-        return false;
-    default:
-        return true;
-    }
-}
-*/
 namespace {
 
 struct RustLexerStaticData final {
@@ -808,9 +768,10 @@ bool RustLexer::sempred(RuleContext *context, size_t ruleIndex, size_t predicate
   return true;
 }
 
+
 bool RustLexer::SHEBANGSempred(antlr4::RuleContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 0: return this->SOF();
+    case 0: return this.SOF();
 
   default:
     break;
@@ -820,8 +781,8 @@ bool RustLexer::SHEBANGSempred(antlr4::RuleContext *_localctx, size_t predicateI
 
 bool RustLexer::FLOAT_LITERALSempred(antlr4::RuleContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 1: return this->floatLiteralPossible();
-    case 2: return this->floatDotPossible();
+    case 1: return this.floatLiteralPossible();
+    case 2: return this.floatDotPossible();
 
   default:
     break;

@@ -23788,7 +23788,7 @@ RustParser::ShlContext* RustParser::shl() {
     match(RustParser::LT);
     setState(2467);
 
-    if (!(this->next('<'))) throw FailedPredicateException(this, "this.next('<')");
+    if (!(this.next('<'))) throw FailedPredicateException(this, "this.next('<')");
     setState(2468);
     match(RustParser::LT);
    
@@ -23858,7 +23858,7 @@ RustParser::ShrContext* RustParser::shr() {
     match(RustParser::GT);
     setState(2471);
 
-    if (!(this->next('>'))) throw FailedPredicateException(this, "this.next('>')");
+    if (!(this.next('>'))) throw FailedPredicateException(this, "this.next('>')");
     setState(2472);
     match(RustParser::GT);
    
@@ -23916,7 +23916,7 @@ bool RustParser::expressionSempred(ExpressionContext *_localctx, size_t predicat
 
 bool RustParser::shlSempred(ShlContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 21: return this->next('<');
+    case 21: return this.next('<');
 
   default:
     break;
@@ -23926,7 +23926,7 @@ bool RustParser::shlSempred(ShlContext *_localctx, size_t predicateIndex) {
 
 bool RustParser::shrSempred(ShrContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 22: return this->next('>');
+    case 22: return this.next('>');
 
   default:
     break;
