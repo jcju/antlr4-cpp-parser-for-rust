@@ -1,10 +1,10 @@
 [![Build Status](https://img.shields.io/badge/build%20-passing-brightgreen.svg)](https://github.com/jcju/antlr4-cpp-parser-for-rust)
 
-# A C++ parser for Rust language, generated using ANTLR 4
+# ANTLR C++ parser for Rust language
 
 
 
-Main contribution: added C++ implementation of two base Class:
+Main contribution: added the C++ implementation of two base Class:
 
 - CppBase/RustLexerBase.h
 - CppBase/RustParserBase.h
@@ -12,7 +12,7 @@ Main contribution: added C++ implementation of two base Class:
 
 ## Usage
 
-Generate parser (can be skipped)
+Generate parser *(can be skipped)*
 ```
 antlr4 -Dlanguage=Cpp -visitor -o generated/ -package antlrcpptest RustLexer.g4 RustParser.g4
 ```
@@ -70,5 +70,5 @@ A record of testing result of inputs in ./examples/
 | :-: | --------------------- | --------------------------------------------------------------- |
 | ✅  | hello.rs             |                                                                             |
 | ✅  | v1_46_0_split_float_literal.rs |                                                                             |
-| - | place_holder  | not tested yet &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
+| - | place_holder  | not tested yet &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 | ❌  | place_holder            | test: FAIL                                                                  |
