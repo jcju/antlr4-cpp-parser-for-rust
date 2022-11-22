@@ -771,7 +771,7 @@ bool RustLexer::sempred(RuleContext *context, size_t ruleIndex, size_t predicate
 
 bool RustLexer::SHEBANGSempred(antlr4::RuleContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 0: return this.SOF();
+    case 0: return this->SOF();
 
   default:
     break;
@@ -781,8 +781,8 @@ bool RustLexer::SHEBANGSempred(antlr4::RuleContext *_localctx, size_t predicateI
 
 bool RustLexer::FLOAT_LITERALSempred(antlr4::RuleContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 1: return this.floatLiteralPossible();
-    case 2: return this.floatDotPossible();
+    case 1: return this->floatLiteralPossible();
+    case 2: return this->floatDotPossible();
 
   default:
     break;
