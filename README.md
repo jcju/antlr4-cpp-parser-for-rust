@@ -1,14 +1,16 @@
-## A C++ parser for Rust language, generated using ANTLR 4
+[![Build Status](https://img.shields.io/badge/build%20-passing-brightgreen.svg)](https://github.com/jcju/antlr4-cpp-parser-for-rust)
 
-**Platform**: Windows
+# A C++ parser for Rust language, generated using ANTLR 4
 
-Added C++ implementation of two base Class:
+
+
+Main contribution: added C++ implementation of two base Class:
 
 - CppBase/RustLexerBase.h
 - CppBase/RustParserBase.h
 
 
-### Usage
+## Usage
 
 Generate parser (can be skipped)
 ```
@@ -22,7 +24,7 @@ Put Rust code in:
 build and run.
 
 
-### Guide on building ANTLR C++ parser on Windows
+## Guide on building ANTLR C++ parser on Windows
 
 On Windows, we can build the generated C++ parser with Visual Studio. The steps are shown below:
 
@@ -36,7 +38,7 @@ On Windows, we can build the generated C++ parser with Visual Studio. The steps 
 
 5. Run `antlr4-cpp-rust`
 
-#### On earlier VS version
+### On earlier VS version
 
 This project's name has "vs2022" but actually supports vs2019 or earlier version.
 
@@ -50,17 +52,17 @@ On both `antlr4cpp-vs2022` and `antlr4-cpp-rust` project , right click -> choose
 
 - VS 2015: v140
 
-### Reference
+## Reference
 
 https://github.com/antlr/grammars-v4/tree/master/rust
 
 
 
-## Test
+# Test
 
 
 
-A record of testing codes in ./examples/
+A record of testing result of inputs in ./examples/
 
 
 
