@@ -1084,8 +1084,8 @@ macroPunctuationToken
 // some new syntax? dsl? for these stuff so i needn't write it in (at least) 5 language
 
 shl
-   : '<' {this.next('<')}? '<'
+   : '<' {this->next('<')}? '<'
    ;
 shr
-   : '>' {this.next('>')}? '>'
+   : '>' {this->next('>')}? '>'
    ;

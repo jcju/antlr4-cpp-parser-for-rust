@@ -176,7 +176,7 @@ BLOCK_COMMENT_OR_DOC
    ) -> channel (HIDDEN)
    ;
 
-SHEBANG: {this.SOF()}? '\ufeff'? '#!' ~[\r\n]* -> channel(HIDDEN);
+SHEBANG: {this->SOF()}? '\ufeff'? '#!' ~[\r\n]* -> channel(HIDDEN);
 
 //ISOLATED_CR
 // : '\r' {_input.LA(1)!='\n'}// not followed with \n ;
@@ -252,7 +252,7 @@ OCT_LITERAL: '0o' '_'* OCT_DIGIT (OCT_DIGIT | '_')*;
 BIN_LITERAL: '0b' '_'* [01] [01_]*;
 
 FLOAT_LITERAL
-   : {this.floatLiteralPossible()}? (DEC_LITERAL '.' {this.floatDotPossible()}?
+   : {this->floatLiteralPossible()}? (DEC_LITERAL '.' {this->floatDotPossible()}?
    | DEC_LITERAL
    (
       '.' DEC_LITERAL
